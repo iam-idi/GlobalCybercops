@@ -299,10 +299,6 @@ section{
   text-align: left;
 }
 
-#services .serviceholder .center{
-}
-
-
 #services .service i{
   color: var(--terbgcolor);
   font-size: 40px;
@@ -310,9 +306,6 @@ section{
 }
 
 /* team */
-#team{
-
-}
 
 #team>p, #team>.smallheading{
   text-align: center;
@@ -369,8 +362,85 @@ section{
 
 #contact{
 background: var(--secbgcolor);
+display: flex;
+gap: 2%;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 }
 
+#contact .contactinfo{
+  width: 49%;
+}
+
+#contact .contactinfo div .boldtext{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#contact .contactinfo div i{
+  font-size: 20px;
+  color:var(--terbgcolor);
+  display: inline-block;
+  margin: 10px 0 10px 0;
+
+}
+
+#contact form {
+  /* border: 1px solid red; */
+  width: 49%;
+}
+
+#contact form input{
+
+}
+
+#contact form input, #contact form textarea{
+  height: 50px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--terbgcolor);
+  color: var(--font-color1);
+  font-size: 18px;
+  /* letter-spacing: 0.005em; */
+  display: inline-block;
+  margin: 10px 0;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+#contact form #text{
+  width: 80%;
+  
+}
+
+#contact form #number, #contact form #email{
+  width: 40%;
+}
+#contact form textarea{
+  width: 82%;
+  height: 150px;
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+#contact form button{
+  width: 83%;
+  height: 50px;
+  display: block;
+  background-color: var(--terbgcolor);
+  color: var(--font-color3);
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#contact form button:hover{
+  background-color: transparent;
+  color: var(--terbgcolor);
+  border: 1px solid var(--terbgcolor);
+}
 /* footer */
 
 footer .footerinfo .basicinfo .logo{

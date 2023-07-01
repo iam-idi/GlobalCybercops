@@ -1,0 +1,392 @@
+@font-face {
+    font-family: poppins;
+    src: url("Global cybercops\assets\poppins");
+  }
+
+:root {
+  --pribgcolor: #212121;
+  --secbgcolor: #2f2f2f;
+  --terbgcolor: #7ae0b2;
+  --font-color1: #fff;
+  --font-color2: #b2b2b2;
+  --font-color3: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: poppins;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pribgcolor);
+  color: var(--font-color1);
+  overflow-x: hidden;
+  /* padding: 0 50px; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color1);
+}
+
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+.normaltext{
+    font-size: 18px;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.smallheading{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--terbgcolor);
+    
+}
+
+.introtext{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+h2,
+h3,
+h4 {
+  letter-spacing: 0.08em;
+}
+
+h2{
+  margin-bottom: 15px;
+  font-size: 45px;
+  font-weight: 1500;
+}
+
+/* header */
+
+header{
+  height: 60px;
+  width: 100%;
+  background-color: var(--pribgcolor);
+  position: fixed;
+  top: 0;
+  padding: 10px 30px 10px;
+  z-index: 2;
+  color: var(--font-color3);
+  /* display: flex; */
+}
+
+header h1 {
+  display: inline;
+  letter-spacing: 0.2em;
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom right,
+    var(--font-color1),
+    var(--font-color1),
+    #777,
+    var(--font-color1),
+    var(--font-color1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+header nav {
+  float: right;
+  display: inline;
+  margin-top: 10px;
+}
+
+nav a {
+  margin-left: 15px;
+  /* color: var(--font-color3); */
+  letter-spacing: 0.2em;
+  /* color: var(--font-color1); */
+}
+
+nav a:hover{
+  color: var(--terbgcolor);
+}
+
+/* main */
+
+main{
+  padding-top: 50px;
+}
+
+section{
+  width: 100%;
+  padding: 40px 70px;
+}
+
+/* hero */
+
+#hero{
+  background-image: url(../assets/bizpeople.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.doubleline{
+  width: 600px;
+}
+
+#hero h2{
+  width: 400px;
+}
+
+#hero button{
+  width: 80px;
+  height: 30px;
+  background-color: var(--terbgcolor);
+  color: var(--font-color3);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+#hero>div{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  margin-top: 80px;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero>div .features{
+  height: 250px;
+  width: 250px;
+  background: var(--secbgcolor);
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+#hero>div .features .smallheading{
+  color: var(--font-color1);
+}
+
+#hero>div .features i{
+  color: var(--terbgcolor);
+  display: block;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+/* about */
+
+#about{
+  background-color: var(--secbgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  /* flex-wrap: wrap; */
+}
+#about img{
+  width: 35%;
+  height: 300px;
+}
+
+#about>div{
+  width: 35%;
+  /* height: 100%; */
+  position: relative;
+}
+
+#about .quotemark {
+  font-size: 80px;
+  display: inline-block;
+  /* column-span: 3; */
+  margin-top: 15px;
+  color: var(--terbgcolor);
+  font-weight: 800;
+  position: absolute;
+  top: 60%;
+}
+
+#about p:nth-of-type(3){
+  /* display: inline-block; */
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+/* partners */
+
+#partners div {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+#partners h3{
+  text-align: center;
+}
+
+#partners i {
+  font-size: 40px;
+  margin-right: 40px;
+  transition: 1s;
+}
+
+#partners i:hover{
+ color: var(--terbgcolor);
+}
+
+/* services */
+
+#services {
+  background: var(--secbgcolor);
+}
+
+#services>h3, #services>p{
+  text-align: center;
+}
+
+#services>p:nth-of-type(2){
+  margin-bottom: 40px;
+}
+
+#services .service{
+  display: flex;
+  gap: 20px;
+  width: 300px;
+  padding: 15px 10px;
+}
+
+#services .serviceholder .center i{
+  font-size: 120px;
+  color: var(--terbgcolor);
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#services .serviceholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+#services .serviceholder .left{
+  text-align: right;
+}
+
+#services .serviceholder .right{
+  text-align: left;
+}
+
+#services .serviceholder .center{
+}
+
+
+#services .service i{
+  color: var(--terbgcolor);
+  font-size: 40px;
+
+}
+
+/* team */
+#team{
+
+}
+
+#team>p, #team>.smallheading{
+  text-align: center;
+}
+
+#team .profilebox{
+  margin-top: 30px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#team .profilebox .profile {
+  height: 250px;
+  width: 400px;
+  display: flex;
+}
+
+#team .profilebox .profile img{
+  height: 100%;
+  width: 50%;
+}
+
+#team .profilebox .profile .info{
+  padding: 20px 10px 0 10px;
+  background-color: var(--secbgcolor);
+}
+
+#team .profilebox .profile .info p:first-of-type{
+  color: var(--terbgcolor);
+  font-weight: 800;
+}
+
+
+#team .profilebox .profile .info p{
+  text-align: center;
+}
+
+#team .profilebox .profile .info a:first-of-type{
+  margin-left: 30%;
+}
+
+#team .profilebox .profile .info a{
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: var(--terbgcolor);
+}
+
+/* contact */
+
+#contact{
+background: var(--secbgcolor);
+}
+
+/* footer */
+
+footer .footerinfo .basicinfo .logo{
+  letter-spacing: 0.2em;
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom right,
+    var(--font-color1),
+    var(--font-color1),
+    #777,
+    var(--font-color1),
+    var(--font-color1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}

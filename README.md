@@ -1,1 +1,1 @@
-# GlonbalCybercops
+# GlobalCybercops

@@ -456,3 +456,57 @@ footer .footerinfo .basicinfo .logo{
   -webkit-text-fill-color: transparent;
   width: fit-content;
 }
+
+footer .footerinfo{
+  padding: 50px 70px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+footer .footerinfo .basicinfo .logo{
+  margin-bottom: 20px;
+}
+
+footer .footerinfo .basicinfo a i {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 30px;
+  color: var(--terbgcolor);
+}
+
+footer .footerinfo>div:first-of-type{
+  width: 30%;
+  /* border: 1px solid red; */
+}
+
+footer .footerinfo .sitelanes, footer .footerinfo .footercontact {
+  margin-top: 50px;
+}
+
+footer .footerinfo .sitelanes{
+  margin-left: -5px;
+}
+
+footer .footerinfo .sitelanes ol li {
+  list-style-type: circle;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+footer .footerinfo .sitelanes ol li:hover{
+  color: var(--terbgcolor);
+}
+
+footer .footerinfo .sitelanes ol li a:hover {
+  color: var(--terbgcolor);
+}
+
+footer .copyright{
+  background: var(--secbgcolor);
+  padding: 10px 0 2px;
+  text-align: center;
+}

@@ -98,10 +98,10 @@ header h1 {
     var(--font-color1),
     var(--font-color1)
   );
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 header nav {
@@ -451,10 +451,11 @@ footer .footerinfo .basicinfo .logo{
     var(--font-color1),
     var(--font-color1)
   );
-  background-clip: text;
+  
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 footer .footerinfo{
